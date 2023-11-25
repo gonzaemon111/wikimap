@@ -1,3 +1,85 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": ["tailwindcss", "unused-imports", "strict-dependencies"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "ignorePatterns": ["**/*.js"],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-unsafe-return": "error",
+    "unused-imports/no-unused-imports-ts": "warn",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
+        "pathGroups": [
+          {
+            "pattern": "{react,react-dom/**,react-router-dom}",
+            "group": "builtin",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ],
+    "strict-dependencies/strict-dependencies": [
+      "warn",
+      [
+        {
+          "module": "src/components",
+          "allowReferenceFrom": ["src/app"],
+          "allowSameModule": true
+        },
+        {
+          "module": "src/components/organisms",
+          "allowReferenceFrom": ["src/components/pages"],
+          "allowSameModule": true
+        },
+        {
+          "module": "src/components/molecules",
+          "allowReferenceFrom": ["src/components/pages", "src/components/organisms"],
+          "allowSameModule": true
+        },
+        {
+          "module": "src/components/atoms",
+          "allowReferenceFrom": ["src/components/pages", "src/components/organisms", "src/components/molecules"],
+          "allowSameModule": true
+        },
+        {
+          "module": "src/repositories",
+          "allowReferenceFrom": ["src/services", "src/server/di.config.ts"],
+          "allowSameModule": true
+        },
+        {
+          "module": "src/services",
+          "allowReferenceFrom": ["src/controllers", "src/server/di.config.ts"],
+          "allowSameModule": true
+        },
+        {
+          "module": "src/controllers",
+          "allowReferenceFrom": ["src/pages", "src/app", "src/server/di.config.ts"],
+          "allowSameModule": true
+        }
+      ]
+    ]
+  }
 }
