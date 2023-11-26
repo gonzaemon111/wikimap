@@ -4,3 +4,4 @@
 
 - Next.js
 - TailwindCSS
+  - [daisyUI](https://daisyui.com/)
