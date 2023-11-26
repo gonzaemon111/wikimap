@@ -1,7 +1,5 @@
+import { TopPage } from '@/components/pages/TopPage';
+
 export default function Home() {
-  return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <p>Wikimap</p>
-    </main>
-  );
+  return <TopPage />;
 }
