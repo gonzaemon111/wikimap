@@ -16,7 +16,7 @@ interface Props {
   };
 }
 
-export default async function RootLayout({ children, params }: Props) {
+export default async function RootLayout({ children }: Props) {
   const session = await getSession();
 
   if (session === undefined || session === null) {
