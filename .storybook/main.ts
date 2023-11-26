@@ -8,6 +8,7 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
+    '@storybook/addon-jest',
   ],
   framework: {
     name: '@storybook/nextjs',
@@ -16,7 +17,7 @@ const config: StorybookConfig = {
   docs: {
     autodocs: 'tag',
   },
-  webpack(config, options) {
+  webpack(config, _options) {
     if (config.resolve === undefined) {
       return config;
     }
