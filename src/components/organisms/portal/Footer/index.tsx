@@ -2,7 +2,7 @@ export function PortalFooter() {
   return (
     <footer className='footer bg-neutral p-10 text-neutral-content'>
       <nav>
-        <header className='footer-title'>Services</header>
+        <header className='footer-title'>サービス</header>
         <a className='link-hover link'>Branding</a>
         <a className='link-hover link'>Design</a>
         <a className='link-hover link'>Marketing</a>

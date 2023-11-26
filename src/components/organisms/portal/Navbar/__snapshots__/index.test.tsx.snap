@@ -1,0 +1,366 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Organisms/Navbar コンポーネント スナップショットテスト Renders Default story 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <nav
+        class="navbar bg-slate-50 dark:bg-slate-900"
+      >
+        <div
+          class="navbar-start"
+        >
+          <div
+            class="dropdown"
+          >
+            <label
+              class="btn btn-ghost lg:hidden"
+              tabindex="0"
+            >
+              <svg
+                class="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 6h16M4 12h8m-8 6h16"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </label>
+            <ul
+              class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow dark:bg-slate-900"
+              tabindex="0"
+            >
+              <li>
+                <a
+                  href="#"
+                >
+                  Item 1
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Parent
+                </a>
+                <ul
+                  class="p-2"
+                >
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      Submenu 1
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      Submenu 2
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                >
+                  Item 3
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a
+            class="btn btn-ghost text-xl"
+            href="/"
+          >
+            <img
+              alt="wikimap-logo"
+              class="h-8"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=https%3A%2F%2Fimagedelivery.net%2F_ZgxhjwzRQrsPvI8IazDLA%2Fe6b20493-4f2c-44ed-1bcc-0a5774ac4300%2Fpublic&w=256&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fimagedelivery.net%2F_ZgxhjwzRQrsPvI8IazDLA%2Fe6b20493-4f2c-44ed-1bcc-0a5774ac4300%2Fpublic&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimagedelivery.net%2F_ZgxhjwzRQrsPvI8IazDLA%2Fe6b20493-4f2c-44ed-1bcc-0a5774ac4300%2Fpublic&w=256&q=75 2x"
+              style="color: transparent;"
+              width="115"
+            />
+          </a>
+        </div>
+        <div
+          class="navbar-center hidden lg:flex"
+        >
+          <ul
+            class="menu menu-horizontal px-1"
+          >
+            <li>
+              <a
+                href="#"
+              >
+                Item 1
+              </a>
+            </li>
+            <li
+              tabindex="0"
+            >
+              <details>
+                <summary>
+                  Parent
+                </summary>
+                <ul
+                  class="p-2 dark:bg-slate-900"
+                >
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      Submenu 1
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      Submenu 2
+                    </a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <a
+                href="#"
+              >
+                Item 3
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="navbar-end"
+        >
+          <a
+            class="btn btn-primary"
+            href="/id-sample"
+          >
+            アプリへ
+          </a>
+        </div>
+      </nav>
+    </div>
+  </body>,
+  "container": <div>
+    <nav
+      class="navbar bg-slate-50 dark:bg-slate-900"
+    >
+      <div
+        class="navbar-start"
+      >
+        <div
+          class="dropdown"
+        >
+          <label
+            class="btn btn-ghost lg:hidden"
+            tabindex="0"
+          >
+            <svg
+              class="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6h16M4 12h8m-8 6h16"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </label>
+          <ul
+            class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow dark:bg-slate-900"
+            tabindex="0"
+          >
+            <li>
+              <a
+                href="#"
+              >
+                Item 1
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+              >
+                Parent
+              </a>
+              <ul
+                class="p-2"
+              >
+                <li>
+                  <a
+                    href="#"
+                  >
+                    Submenu 1
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                  >
+                    Submenu 2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#"
+              >
+                Item 3
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a
+          class="btn btn-ghost text-xl"
+          href="/"
+        >
+          <img
+            alt="wikimap-logo"
+            class="h-8"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fimagedelivery.net%2F_ZgxhjwzRQrsPvI8IazDLA%2Fe6b20493-4f2c-44ed-1bcc-0a5774ac4300%2Fpublic&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fimagedelivery.net%2F_ZgxhjwzRQrsPvI8IazDLA%2Fe6b20493-4f2c-44ed-1bcc-0a5774ac4300%2Fpublic&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimagedelivery.net%2F_ZgxhjwzRQrsPvI8IazDLA%2Fe6b20493-4f2c-44ed-1bcc-0a5774ac4300%2Fpublic&w=256&q=75 2x"
+            style="color: transparent;"
+            width="115"
+          />
+        </a>
+      </div>
+      <div
+        class="navbar-center hidden lg:flex"
+      >
+        <ul
+          class="menu menu-horizontal px-1"
+        >
+          <li>
+            <a
+              href="#"
+            >
+              Item 1
+            </a>
+          </li>
+          <li
+            tabindex="0"
+          >
+            <details>
+              <summary>
+                Parent
+              </summary>
+              <ul
+                class="p-2 dark:bg-slate-900"
+              >
+                <li>
+                  <a
+                    href="#"
+                  >
+                    Submenu 1
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                  >
+                    Submenu 2
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              Item 3
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="navbar-end"
+      >
+        <a
+          class="btn btn-primary"
+          href="/id-sample"
+        >
+          アプリへ
+        </a>
+      </div>
+    </nav>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
