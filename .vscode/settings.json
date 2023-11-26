@@ -38,7 +38,8 @@
     "flowbite",
     "supabase",
     "autodocs",
-    "wikimap"
+    "wikimap",
+    "daisyui"
   ],
   "scss.lint.unknownAtRules": "ignore",
   "css.lint.unknownAtRules": "ignore",
