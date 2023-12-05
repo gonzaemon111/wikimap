@@ -2,7 +2,8 @@ import { z } from 'zod';
 
 const serverSchema = z.object({
   TZ: z.string(),
-  AUTH0_SECRET: z.string().length(32),
+  API_BASE_URL: z.string(),
+  AUTH0_SECRET: z.string(),
   AUTH0_BASE_URL: z.string(),
   AUTH0_ISSUER_BASE_URL: z.string(),
   AUTH0_CLIENT_ID: z.string(),
@@ -11,6 +12,7 @@ const serverSchema = z.object({
 
 export const serverEnv = {
   TZ: process.env.TZ ?? 'Asia/Tokyo',
+  API_BASE_URL: process.env.API_BASE_URL,
   AUTH0_SECRET: process.env.AUTH0_SECRET,
   AUTH0_BASE_URL: process.env.AUTH0_BASE_URL,
   AUTH0_ISSUER_BASE_URL: process.env.AUTH0_ISSUER_BASE_URL,
