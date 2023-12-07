@@ -31,8 +31,8 @@ jobs:
       - name: Check Lint
         run: bun run lint
 
-      # - name: Check Test
-      #   run: bun run test
+      - name: Check Test
+        run: bun run test
 
       - name: Check Build
         run: bun run build
