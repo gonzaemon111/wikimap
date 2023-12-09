@@ -2,6 +2,7 @@ import { z } from 'zod';
 
 const serverSchema = z.object({
   TZ: z.string(),
+  NODE_ENV: z.enum(['development', 'production', 'test']),
   API_BASE_URL: z.string(),
   AUTH0_SECRET: z.string(),
   AUTH0_BASE_URL: z.string(),
@@ -12,6 +13,7 @@ const serverSchema = z.object({
 
 export const serverEnv = {
   TZ: process.env.TZ ?? 'Asia/Tokyo',
+  NODE_ENV: process.env.NODE_ENV ?? 'development',
   API_BASE_URL: process.env.API_BASE_URL,
   AUTH0_SECRET: process.env.AUTH0_SECRET,
   AUTH0_BASE_URL: process.env.AUTH0_BASE_URL,
